@@ -2,17 +2,18 @@ package br.com.digitalhouse.dh_agendaapp;
 
 import android.content.Intent;
 import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import static br.com.digitalhouse.dh_agendaapp.MainActivity.NOME_KEY;
+import static br.com.digitalhouse.dh_agendaapp.MainActivity.TELEFONE_KEY;
 
 public class HomeActivity extends AppCompatActivity {
-    private static final String NOME_KEY = ;
-    private static final String TELEFONE_KEY = ;
-    private TextInputLayout texto1;
-    private TextInputLayout texto2;
+    private TextView texto1;
+    private TextView texto2;
     private Button botao2;
 
 
@@ -21,8 +22,8 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        texto1 = findViewById(R.id.textInputLayout);
-        texto2 = findViewById(R.id.textInputLayout2);
+        texto1 = findViewById(R.id.textViewNome);
+        texto2 = findViewById(R.id.textViewTelefone);
         botao2 = findViewById(R.id.button);
 
         Intent intent = getIntent();

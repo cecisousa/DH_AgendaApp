@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
                     Bundle bundle = new Bundle();
 
-                    bundle.putString("NOME_KEY", name);
-                    bundle.putString("TELEFONE_KEY", phone);
+                    bundle.putString(NOME_KEY, name);
+                    bundle.putString(TELEFONE_KEY, phone);
                     intent.putExtras(bundle);
                     startActivity(intent);
 
