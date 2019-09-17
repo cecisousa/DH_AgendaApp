@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 String phone = telefone.getEditText().getText().toString();
 
                 if (!name.isEmpty() && !phone.isEmpty()){
-//                    Mandar para dados outra activity
+//                    Mandar os dados para outra activity
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
 
                     Bundle bundle = new Bundle();
